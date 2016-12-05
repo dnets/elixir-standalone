@@ -1,0 +1,51 @@
+// style.scss
+// Style index
+
+// bootstrap-sass
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Fonts
+@import 'typography';
+
+// Color variables
+@import 'colors';
+
+body {
+  font-family: $lato;
+  font-size: 20px;
+  color: $brand-black;
+  font-weight: normal;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: url('https://source.unsplash.com/random/1600x900');
+  width: 100%;
+  height: 100%;
+  color: $brand-white;
+  text-align: center;
+  &-overlay {
+    position: relative;
+    top: 0;
+    background: rgba(0,0,0,0.65);
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 1em;
+      text-shadow: 2px 2px 0px $brand-light-gray;
+      position: relative;
+      top: 200px;
+      font-size: 30px;
+      margin: 0 auto;
+    }
+    p {
+      position: relative;
+      top: 250px;
+      font-size: 0.65em;
+    }
+  }
+}
